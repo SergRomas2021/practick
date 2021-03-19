@@ -7,35 +7,11 @@
     <title>Добро пожаловать! - Quantum System</title>
     <link href="content/css.css" rel="stylesheet" />
     <link href="content/css_custom.css" rel="stylesheet" />
-    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/223a7479/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
-    <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
-    <script src="bundles/modernizr.js"></script>
     <link rel="stylesheet" href="content/intlTelInput.css">
     <link rel="shortcut icon" href="https://quantumsys.ru/content/Images/favicon.ico">
     <link rel="icon" href="https://quantumsys.ru/content/Images/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic-ext" rel="preload" as="style" onload="this.rel='stylesheet'">
-    
-<script type="text/javascript">
-    var yaParams = {ip: "176.121.9.226"};
-</script>
-<!-- Yandex.Metrika counter quantumsys.ru -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(66200911, "init", {
-        params:window.yaParams,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-    });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/66200911" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter --> 
-
 </head>
 <body class="eupopup eupopup-bottom eupopup-style-compact">
     <header>
@@ -89,7 +65,7 @@
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group">
                                     <div class="input-group-addon name"></div>
-                                    <input class="form-control req" data-val="true" data-val-length="Имя должен быть не менее 1 символов." 
+                                    <input class="form-control" data-val="true" data-val-length="Имя должен быть не менее 1 символов." 
                                     data-val-length-max="45" data-val-length-min="1" data-val-required="Поле 'Имя' не задано" name="firstname" 
                                     placeholder="Имя" type="text" value="" required="true" aria-required="true">
                                 </div>
@@ -97,14 +73,17 @@
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group">
                                     <div class="input-group-addon name"></div>
-                                    <input class="form-control req" data-val="true" data-val-length="The field Фамилия must be a string with a maximum length of 45." data-val-length-max="45" data-val-required="Поле 'Фамилия' не задано" name="lastname" placeholder="Фамилия" type="text" value="" required="true" aria-required="true">
+                                    <input class="form-control" data-val="true" data-val-length="The field Фамилия must be a string with a maximum length of 45." 
+                                    data-val-length-max="45" data-val-required="Поле 'Фамилия' не задано" name="lastname" placeholder="Фамилия" type="text" 
+                                    value="" required="true" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
-
                                 <div class="input-group">
                                     <div class="input-group-addon email"></div>
-                                    <input class="form-control email req" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-length="The field Email must be a string with a maximum length of 255." data-val-length-max="255" data-val-required="Поле 'Email' не задано" name="email" placeholder="Email" type="text" value="" required="true" aria-required="true">
+                                    <input class="form-control email" data-val="true" data-val-email="The Email field is not a valid e-mail address." 
+                                    data-val-length="The field Email must be a string with a maximum length of 255." data-val-length-max="255" 
+                                    data-val-required="Поле 'Email' не задано" name="email" placeholder="Email" type="text" value="" required="true" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
@@ -112,11 +91,14 @@
                                     <div class="intl-tel-input allow-dropdown">
                                         <div class="flag-container">
                                             <div class="selected-flag" role="combobox" aria-owns="country-listbox" >
-                                            
                                             </div>
                                             <ul class="country-list hide" id="country-listbox" aria-expanded="false" role="listbox"></ul>
                                         </div>
-                                        <input class="js-phone form-control req input-validation-error" data-val="true" data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" type="tel" minlength="7" required="true" aria-required="true" autocomplete="off" aria-describedby="phone_number-error" aria-invalid="true"></div>
+                                        <input class="js-phone form-control req input-validation-error" data-val="true" 
+                                        data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" 
+                                        type="tel" minlength="7" required="true" aria-required="true" autocomplete="off" aria-describedby="phone_number-error" 
+                                        aria-invalid="true">
+                                    </div>
                                 </div>
                             </div>
 
@@ -217,9 +199,7 @@
         </div>
     </div>
     <div class="wrapper data2">
-
         <div class="wrapper laptop">
-
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-10 col-md-offset-1">
@@ -228,7 +208,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -248,9 +227,7 @@
             </div>
         </div>
     </div>
-
     <div class="spacer"></div>
-
     <div class="wrapper checkbook">
         <div class="container">
             <div class="row">
@@ -258,7 +235,6 @@
                     <h1>ПОМОЩЬ И ПОДДЕРЖКА</h1>
                     <h2>МЫ ОТВЕТИМ НА ВАШИ ВОПРОСЫ И ПОМОЖЕМ ЗАРАБОТАТЬ ДЕНЬГИ</h2>
                 </div>
-
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div class="faq">
                         <div class="question basic">
@@ -268,7 +244,6 @@
                             Quantum System – это 100% БЕСПЛАТНАЯ программа, которая может торговать на рынках бинарных опционов в 1 клик! Она полностью автоматизирована и выбирает для Вас выигрышные сделки!
                         </div>
                     </div>
-
                     <div class="faq">
                         <div class="question money">
                             <span>Сколько я могу зарабатывать с помощью этой программы?</span>
@@ -299,7 +274,6 @@
                             чтобы Вы смогли торговать. 3 шаг: Внесите деньги на свой счет. 4 шаг: Начните зарабатывать деньги прямо сейчас! Прямо в первый день!
                         </div>
                     </div>
-
                     <div class="faq">
                         <div class="question cards">
                             <span>Нужно ли мне использовать кредитную карту для регистрации?</span>
@@ -307,15 +281,12 @@
                         <div class="answer">
                             НИ В КОЕМ СЛУЧАЕ!. Программа Quantum System является 100% БЕСПЛАТНОЙ. Вам не нужна кредитная карта, счет в WebMoney или другая банковская информация при загрузке Quantum System! После того, как Вы зайдете в личный кабинет, мы порекомендуем Вам брокера
                             бинарных опционов, которым Вы сможете пользоваться. Чтобы начать получать прибыль, Вам нужно внести деньги на депозит. Это ВАШИ деньги, которые вы просто вносите для того, чтобы торговать, и Вы можете снять их, когда захотите!
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
     <div class="wrapper dashed">
         <div class="container">
             <div class="row">
@@ -325,7 +296,6 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="hidden-xs col-sm-1 col-md-offset-1  col-lg-offset-2 arr-left">
@@ -391,8 +361,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -407,7 +375,6 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-lg-10 col-lg-offset-1 text-center grayscale">
@@ -441,12 +408,10 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="vip">НЕ УПУСТИТЕ ЭТОТ ШАНС</h2>
                         </div>
-
                         <div class="photo">
                             <img src="content/images/vip-photo-paid.png">
                             <div class="vip-comment">
@@ -454,22 +419,15 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row">
-
-
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                             <h4>СОЗДАЙТЕ УЧЕТНУЮ ЗАПИСЬ QUANTUM SYSTEM ПРЯМО СЕЙЧАС</h4>
                         </div>
-
                         <div class="col-xs-12">
-
-
-
                             <div id="regFormContent_regFormb77bdb8099d04614acb388b56836ac2c">
                                 <form class="reg-form" action="send.php" method="post" novalidate="novalidate">
-<input type="hidden" name="_ref" value="registration.html">
-<input type="hidden" name="_click" value="2b52091c-f44b-40cd-b14c-597bfbd228f6">
+                                <input type="hidden" name="_ref" value="registration.html/">
+                                <input type="hidden" name="_click" value="2b52091c-f44b-40cd-b14c-597bfbd228f6">
                                     <div class="validation-summary-valid" data-valmsg-summary="true">
                                         <ul>
                                             <li style="display:none"></li>
@@ -479,19 +437,19 @@
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="input-group">
                                                 <div class="input-group-addon name"></div>
-                                                <input class="form-control req valid" name="firstname" placeholder="Имя" type="text">
+                                                <input class="form-control" name="firstname" placeholder="Имя" type="text">
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="input-group">
                                                 <div class="input-group-addon name"></div>
-                                                <input class="form-control req" name="lastname" placeholder="Фамилия" type="text">
+                                                <input class="form-control" name="lastname" placeholder="Фамилия" type="text">
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <div class="input-group">
                                                 <div class="input-group-addon email"></div>
-                                                <input class="form-control email req" name="email" placeholder="Email" type="text">
+                                                <input class="form-control email" name="email" placeholder="Email" type="text">
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
@@ -499,11 +457,11 @@
                                                     <div class="intl-tel-input allow-dropdown">
                                                         <div class="flag-container">
                                                         <div class="selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="">
-                                                            <div class="iti-flag ua"></div>
-                                                            <div class="iti-arrow"></div>
                                                         </div>
                                                         </div>
-                                                        <input class="js-phone form-control req" data-val="true" data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" type="tel" minlength="7" required="true" aria-required="true" autocomplete="off">
+                                                        <input class="js-phone form-control req" data-val="true" 
+                                                        data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" 
+                                                        type="tel" minlength="7" required="true" aria-required="true" autocomplete="off">
                                                     </div>
                                             </div>
                                         </div>
@@ -555,7 +513,9 @@
             <div class="copyright">Copyright ©2021 – Quantum System Management</div>
         </div>
     </footer>
-
+    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/223a7479/www-widgetapi.vflset/www-widgetapi.js" async=""></script>
+    <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
+    <script src="bundles/modernizr.js"></script>
     <script src="bundles/jquery.js"></script>
     <script src="bundles/bootstrap.js"></script>
     <script src="bundles/jqueryval.js"></script>
