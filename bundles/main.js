@@ -21,7 +21,7 @@
             },
             initialCountry: "auto",
             nationalMode: false,
-            utilsScript: "./bundles/utils.js",
+            utilsScript: "utils.js",
             customPlaceholder: function(selectedCountryPlaceholder, selectedCountryData) {
                 return selectedCountryPlaceholder;
             },

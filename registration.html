@@ -89,12 +89,7 @@
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group group-phone">
                                     <div class="intl-tel-input allow-dropdown">
-                                        <div class="flag-container">
-                                            <div class="selected-flag" role="combobox" aria-owns="country-listbox" >
-                                            </div>
-                                            <ul class="country-list hide" id="country-listbox" aria-expanded="false" role="listbox"></ul>
-                                        </div>
-                                        <input class="js-phone form-control req input-validation-error" data-val="true" 
+                                        <input class="js-phone form-control input-validation-error" data-val="true" 
                                         data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" 
                                         type="tel" minlength="7" required="true" aria-required="true" autocomplete="off" aria-describedby="phone_number-error" 
                                         aria-invalid="true">
@@ -301,48 +296,51 @@
             <div class="hidden-xs col-sm-1 col-md-offset-1  col-lg-offset-2 arr-left">
             </div>
             <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
-                <div id="regFormContent_regForm0bc518b7b929488ba0b88fc5e0468279">
+                <div id="regFormContent_regForm388c75c2ec35427fb4f7da7849aee085">
                     <form class="reg-form" action="send.php" method="post" novalidate="novalidate">
-                    <input type="hidden" name="_ref" value="registration.html">
-                    <input type="hidden" name="_click" value="2b52091c-f44b-40cd-b14c-597bfbd228f6">
+                    <input type="hidden" name="_ref" value="">
+                    <input type="hidden" name="_click" value="">
                         <div class="validation-summary-valid" data-valmsg-summary="true">
                             <ul>
                                 <li style="display:none"></li>
                             </ul>
                         </div>
-                        <div class="row">
+                                                <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group">
                                     <div class="input-group-addon name"></div>
-                                    <input class="form-control req valid" name="firstname" placeholder="Имя" type="text">
-                                    
+                                    <input class="form-control" data-val="true" data-val-length="Имя должен быть не менее 1 символов." 
+                                    data-val-length-max="45" data-val-length-min="1" data-val-required="Поле 'Имя' не задано" name="firstname" 
+                                    placeholder="Имя" type="text" value="" required="true" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group">
                                     <div class="input-group-addon name"></div>
-                                    <input class="form-control req" name="lastname" placeholder="Фамилия" type="text">
+                                    <input class="form-control" data-val="true" data-val-length="The field Фамилия must be a string with a maximum length of 45." 
+                                    data-val-length-max="45" data-val-required="Поле 'Фамилия' не задано" name="lastname" placeholder="Фамилия" type="text" 
+                                    value="" required="true" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group">
                                     <div class="input-group-addon email"></div>
-                                    <input class="form-control email req" name="email" placeholder="Email" type="text">
+                                    <input class="form-control email" data-val="true" data-val-email="The Email field is not a valid e-mail address." 
+                                    data-val-length="The field Email must be a string with a maximum length of 255." data-val-length-max="255" 
+                                    data-val-required="Поле 'Email' не задано" name="email" placeholder="Email" type="text" value="" required="true" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="input-group group-phone">
-                                        <div class="intl-tel-input allow-dropdown">
-                                            <div class="flag-container">
-                                            <div class="selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="">
-                                                <div class="iti-flag ua"></div>
-                                                <div class="iti-arrow"></div>
-                                            </div>
-                                            </div>
-                                            <input class="js-phone form-control req" data-val="true" data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" type="tel" minlength="7" required="true" aria-required="true" autocomplete="off">
-                                        </div>
+                                    <div class="intl-tel-input allow-dropdown">
+                                        <input class="js-phone form-control" data-val="true" 
+                                        data-val-required="Поле 'Номер телефона' не задано" name="phone_number" placeholder="Номер телефона" 
+                                        type="tel" minlength="7" required="true" aria-required="true" autocomplete="off" aria-describedby="phone_number-error" 
+                                        aria-invalid="true">
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="col-xs-12 ">
                                 <span style="color: #999;margin-top: 1em;display:  inline-block;text-align:  justify;font-size: .8em;">Нажимая "Получить доступ", вы подтверждаете, что ознакомились и полностью понимаете <a href="Agreement.html" target="_blank">Правила Пользования</a> системой «Quantum System» и выражаете свое согласие с ними.</span>
                                 <button type="submit" class="button signup subscribeBtn" name="submitBtn">Получить доступ</button>
@@ -354,10 +352,6 @@
 
             </div>
             <div class="hidden-xs col-sm-1 arr-right">
-            </div>
-
-            <div class="col-xs-12">
-                <h3>ЗАРЕГИСТРИРУЙТЕСЬ ВЫШЕ, ЧТОБЫ НАЧАТЬ ПРЯМО СЕЙЧАС!</h3>
             </div>
         </div>
     </div>
@@ -466,8 +460,9 @@
                                             </div>
                                         </div>
                                         <div class="col-xs-12 ">
-                                            <span style="color: #999;margin-top: 1em;display:  inline-block;text-align:  justify;font-size: .8em;">Нажимая "Получить доступ", вы подтверждаете, что ознакомились и полностью понимаете <a href="Agreement.html" target="_blank">Правила Пользования</a> системой «Quantum System» и выражаете свое согласие с ними.</span>
-                                            <button type="submit" class="button signup subscribeBtn" name="submitBtn">Получить доступ</button>
+                                            <span style="color: #999;margin-top: 1em;display:  inline-block;text-align:  justify;font-size: .8em;">Нажимая "Получить доступ", вы подтверждаете, что ознакомились и полностью понимаете 
+                                                <a href="Agreement.html" target="_blank">Правила Пользования</a> системой «Quantum System» и выражаете свое согласие с ними.</span>
+                                            <button type="submit" class="button" name="submitBtn">Получить доступ</button>
                                         </div>
                                     </div>
                                 </form>
