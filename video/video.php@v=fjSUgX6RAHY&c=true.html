@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Video</title>
+    <link rel="stylesheet" href="css/vlite.css">
+	<style>
+	body{
+		margin:0;
+		padding:0;
+		width:100%;
+		min-height:100vh;
+	}
+	.yt_video{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+    }
+	.yt_video > div{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	iframe{
+		pointer-events:none;
+	}
+	</style>
+</head>
+<body>
+		<div class="yt_video">
+			<video id="player-yt" class="vlite-js" data-youtube-id="fjSUgX6RAHY" data-options='{"autoplay": true, "controls": true, "playPause": true, "time": true, "timeline": true, "volume": true, "fullscreen": true, "poster": "https://img.youtube.com/vi/fjSUgX6RAHY/0.jpg", "nativeControlsForTouch": true}'></video>
+		</div>
+		
+    <script type="text/javascript" src="js/vlite-html5+youtube.min.js"></script>
+    <script>		
+        var playerYT = new vLite({
+            selector: '#player-yt'
+        });
+    </script>
+</body>
+</html>
