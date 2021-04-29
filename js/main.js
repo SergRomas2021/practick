@@ -62,20 +62,20 @@ function sendForms(n, t) {
     var i = location.protocol + "//" + location.host + "/registration?email=" + n + "&username=" + t;
     window.location = i
 
-    // var i = "";
-    // i = 'Через 2 – 3 минуты на указанный email придет письмо с подробной инструкцией.  \n\nЕсли письмо не появилось в папке «Входящие», проверьте папку «Спам».\n\nЕсли вы не получили письмо в течение 30 минут, пожалуйста, обратитесь в тех. поддержку. \n\nПосле получения письма: \n1. Добавьте адрес отправителя в контакты\n2. Если письмо попало в папку «Спам», выделите его и нажмите «Не спам», чтобы  в дальнейшем гарантированно получать всю важную информацию по проекту «Общее дело».\n\nНе забудьте нажать кнопку "Ок"';
-    // alert(i);
-    // window.onbeforeunload = null;
-    // LoaderOn();
-    // $.get(subscriptionRefCodeUrl, {
-    //     refcode: getCookie("refcode"),
-    //     urlRef: document.referrer,
-    //     email: n,
-    //     name: t
-    // }, function() {
-    //     var i = location.protocol + "//" + location.host + "/registration?email=" + n + "&name=" + t;
-    //     window.location = i
-    // })
+    var i = "";
+    i = 'Через 2 – 3 минуты на указанный email придет письмо с подробной инструкцией.  \n\nЕсли письмо не появилось в папке «Входящие», проверьте папку «Спам».\n\nЕсли вы не получили письмо в течение 30 минут, пожалуйста, обратитесь в тех. поддержку. \n\nПосле получения письма: \n1. Добавьте адрес отправителя в контакты\n2. Если письмо попало в папку «Спам», выделите его и нажмите «Не спам», чтобы  в дальнейшем гарантированно получать всю важную информацию по проекту «Общее дело».\n\nНе забудьте нажать кнопку "Ок"';
+    alert(i);
+    window.onbeforeunload = null;
+    LoaderOn();
+    $.get(subscriptionRefCodeUrl, {
+        refcode: getCookie("refcode"),
+        urlRef: document.referrer,
+        email: n,
+        name: t
+    }, function() {
+        var i = location.protocol + "//" + location.host + "/registration?email=" + n + "&name=" + t;
+        window.location = i
+    })
 }
 
 function SendReg(n, t, i, r, u, f, e) {
